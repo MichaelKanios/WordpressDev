@@ -3,15 +3,15 @@ function mrp_enqueue() {
     // Tailwind CSS
     wp_enqueue_style(
         'react-tailwind',
-        get_template_directory_uri() . '/assets/index-DQ8WsjP.css',
+        get_template_directory_uri() . '/assets/index.css',
         array(),
-        filemtime(get_template_directory() . '/assets/index-DQ8WsjP.css')
+        filemtime(get_template_directory() . '/assets/index.css')
     );
       wp_enqueue_script(
     'react-app',
-    get_template_directory_uri() . '/assets/index-DBer_SHx.js',
+    get_template_directory_uri() . '/assets/index.js',
     array(),
-    filemtime(get_template_directory() . '/assets/index-DBer_SHx.js'),
+    filemtime(get_template_directory() . '/assets/index.js'),
     true
   );
 
