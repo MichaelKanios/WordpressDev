@@ -7,6 +7,7 @@
 
   <!-- Πρώτο section: Hero dynamic -->
   <?php get_template_part('template-parts/hero'); ?>
+  <?php get_template_part('template-parts/pricing'); ?>
 
   <!-- React app συνεχίζει για τα υπόλοιπα sections -->
   <div id="root"></div>

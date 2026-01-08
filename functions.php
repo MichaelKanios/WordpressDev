@@ -27,6 +27,21 @@ function mrp_enqueue() {
         filemtime(get_template_directory() . '/assets/hero.js'),
         true
     );
+    wp_enqueue_style(
+    'pricing-css',
+    get_template_directory_uri() . '/assets/pricing.css',
+    [],
+    filemtime(get_template_directory() . '/assets/pricing.css')
+  );
+
+  wp_enqueue_script(
+    'pricing-react',
+    get_template_directory_uri() . '/assets/pricing.js',
+    [],
+    filemtime(get_template_directory() . '/assets/pricing.js'),
+    true
+  );
+
 }
 add_action('wp_enqueue_scripts', 'mrp_enqueue');
 
